@@ -34,8 +34,10 @@ import rx.functions.Func2;
 import rx.schedulers.Schedulers;
 
 public class ZipFragment extends BaseFragment {
-    @Bind(R.id.gridRv) RecyclerView gridRv;
-    @Bind(R.id.swipeRefreshLayout) SwipeRefreshLayout swipeRefreshLayout;
+    @Bind(R.id.gridRv)
+    RecyclerView gridRv;
+    @Bind(R.id.swipeRefreshLayout)
+    SwipeRefreshLayout swipeRefreshLayout;
     ItemListAdapter adapter = new ItemListAdapter();
 
     Observer<List<Item>> observer = new Observer<List<Item>>() {

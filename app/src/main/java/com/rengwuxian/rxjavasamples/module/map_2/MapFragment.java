@@ -34,10 +34,14 @@ import rx.schedulers.Schedulers;
 public class MapFragment extends BaseFragment {
     private int page = 0;
 
-    @Bind(R.id.pageTv) TextView pageTv;
-    @Bind(R.id.previousPageBt) Button previousPageBt;
-    @Bind(R.id.swipeRefreshLayout) SwipeRefreshLayout swipeRefreshLayout;
-    @Bind(R.id.gridRv) RecyclerView gridRv;
+    @Bind(R.id.pageTv)
+    TextView pageTv;
+    @Bind(R.id.previousPageBt)
+    Button previousPageBt;
+    @Bind(R.id.swipeRefreshLayout)
+    SwipeRefreshLayout swipeRefreshLayout;
+    @Bind(R.id.gridRv)
+    RecyclerView gridRv;
 
     ItemListAdapter adapter = new ItemListAdapter();
     Observer<List<Item>> observer = new Observer<List<Item>>() {

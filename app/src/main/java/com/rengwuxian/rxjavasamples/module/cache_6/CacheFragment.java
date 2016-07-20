@@ -28,9 +28,12 @@ import butterknife.OnClick;
 import rx.Observer;
 
 public class CacheFragment extends BaseFragment {
-    @Bind(R.id.loadingTimeTv) TextView loadingTimeTv;
-    @Bind(R.id.swipeRefreshLayout) SwipeRefreshLayout swipeRefreshLayout;
-    @Bind(R.id.cacheRv) RecyclerView cacheRv;
+    @Bind(R.id.loadingTimeTv)
+    TextView loadingTimeTv;
+    @Bind(R.id.swipeRefreshLayout)
+    SwipeRefreshLayout swipeRefreshLayout;
+    @Bind(R.id.cacheRv)
+    RecyclerView cacheRv;
     ItemListAdapter adapter = new ItemListAdapter();
     private long startingTime;
 

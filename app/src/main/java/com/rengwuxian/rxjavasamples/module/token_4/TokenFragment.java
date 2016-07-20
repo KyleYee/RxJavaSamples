@@ -30,8 +30,10 @@ import rx.schedulers.Schedulers;
 
 public class TokenFragment extends BaseFragment {
 
-    @Bind(R.id.tokenTv) TextView tokenTv;
-    @Bind(R.id.swipeRefreshLayout) SwipeRefreshLayout swipeRefreshLayout;
+    @Bind(R.id.tokenTv)
+    TextView tokenTv;
+    @Bind(R.id.swipeRefreshLayout)
+    SwipeRefreshLayout swipeRefreshLayout;
 
     @OnClick(R.id.requestBt)
     void upload() {

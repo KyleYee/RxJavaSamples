@@ -30,8 +30,10 @@ import rx.schedulers.Schedulers;
 
 public class TokenAdvancedFragment extends BaseFragment {
 
-    @Bind(R.id.tokenTv) TextView tokenTv;
-    @Bind(R.id.swipeRefreshLayout) SwipeRefreshLayout swipeRefreshLayout;
+    @Bind(R.id.tokenTv)
+    TextView tokenTv;
+    @Bind(R.id.swipeRefreshLayout)
+    SwipeRefreshLayout swipeRefreshLayout;
     final FakeToken cachedFakeToken = new FakeToken(true);
     boolean tokenUpdated;
 
